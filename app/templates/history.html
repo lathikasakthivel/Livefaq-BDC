@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ History</title>
+</head>
+<body>
+    <h1>All Past Responses</h1>
+
+    {% for msg in messages %}
+        <div style="margin-bottom: 20px;">
+            <b>User:</b> {{ msg.username }}<br>
+            <b>Question:</b> {{ msg.question }}<br>
+            <b>Answer:</b> {{ msg.answer }}<br>
+            <b>Timestamp:</b> {{ msg.timestamp }}<br>
+            <hr>
+        </div>
+    {% endfor %}
+</body>
+</html>

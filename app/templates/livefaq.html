@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Q/A Feed</title>
+</head>
+<body>
+    <h1>Live Q/A Stream</h1>
+
+    {% for msg in messages %}
+        <div style="margin-bottom: 20px;">
+            <b>User:</b> {{ msg.username }}<br>
+            <b>Question:</b> {{ msg.question }}<br>
+            <b>Answer:</b> {{ msg.answer }}<br>
+            <hr>
+        </div>
+    {% endfor %}
+</body>
+</html>
